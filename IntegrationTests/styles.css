@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background-color: #2a2a2a;
+    width: 100vw;
+    height: 100vh;
+}
+
+.toolbar {
+    padding: 16px;
+    flex: 0 0 15%;
+    box-shadow: 2px 2px 4px 0px #00000033;
+}
+
+.log {
+    flex: 1 1 85%;
+    background-color: #1f1f1f;
+    padding: 8px;
+    font-family: "Consolas";
+    color: #ccc;
+}
+
+.button {
+    background-color: #3a3a3a;
+    color: #ccc;
+    padding: 8px;
+    font-family: "Segoe UI";
+    border-radius: 4px;
+    transition: all 75ms;
+    box-shadow: 1px 1px 4px 1px #00000055;
+    user-select: none;
+    margin-bottom: 8px;
+}
+
+.button:active {
+    transform: scale(0.975);
+    box-shadow: 1px 1px 1px 0px #00000088;
+    background-color: #424242;
+}
+
+.log .entry.error {
+    color: red;
+}
+
+.log .entry.warning {
+    color: coral;
+}
+
+.SecMonReqContent {
+
+    background-color: #878686;;
+    margin: auto;
+    text-align: center;
+}
