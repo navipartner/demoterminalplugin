@@ -64,7 +64,7 @@ _contextId = hwc.registerResponseHandler(async (hwcResponse) => {
 });
 
 let requestJson = workflow.respond("getRequestJsonFromBC");
-await hwc.invoke("DemoTerminal", requestJson);
+await hwc.invoke("DemoTerminal", requestJson, _contextId);
 ```
 
 Note: This project has an IntegrationTests older that you can also use to confirm that everything works in the HWC, without developing anything in the POS yet.
