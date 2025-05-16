@@ -61,7 +61,7 @@ Just like in the demo project of this repository:
 ```
 _contextId = hwc.registerResponseHandler(async (hwcResponse) => {
   // Handle responses from HWC here
-}
+});
 
 let requestJson = workflow.respond("getRequestJsonFromBC");
 await hwc.invoke("DemoTerminal", requestJson);
